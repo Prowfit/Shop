@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock Marketplace</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #0f0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      border-bottom: 2px solid #0f0;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .market {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .item {
+      background-color: #111;
+      border: 1px solid #0f0;
+      border-radius: 10px;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s;
+    }
+    .item:hover {
+      transform: scale(1.05);
+    }
+    .item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .price {
+      color: #0f0;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🕒 Clock Marketplace</h1>
+    <p>Browse our collection of stylish clocks</p>
+  </header>
+
+  <main class="market">
+    <div class="item">
+      <img src="Analog Clock.png" alt="Classic Analog Clock">
+      <h2>Classic Analog Clock</h2>
+      <p class="price">₱499</p>
+    </div>
+
+    <div class="item">
+      <img src="Digital Clock.jpg" alt="Digital Desk Clock">
+      <h2>Digital Desk Clock</h2>
+      <p class="price">₱699</p>
+    </div>
+
+    <div class="item">
+      <img src="Wall Clock.jpg" alt="Modern Wall Clock">
+      <h2>Modern Wall Clock</h2>
+      <p class="price">₱899</p>
+    </div>
+
+    <div class="item">
+      <img src="Wooden Clock.jpg" alt="Wooden Vintage Clock">
+      <h2>Wooden Vintage Clock</h2>
+      <p class="price">₱1,099</p>
+    </div>
+  </main>
+</body>
+</html>
